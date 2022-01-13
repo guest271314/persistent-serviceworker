@@ -11,9 +11,13 @@ self.addEventListener('activate', async (event) => {
 self.addEventListener('fetch', async (event) => {
   if (event.request.url.includes('persistentServiceWorker')) {
     const now = new Date();
-    const message = `event: persistentServiceWorker\nretry: 15000\nid: ${id++}\ndata:{"start":"${start}","now": "${now}", "minutes":"${
-      (now - start) / 60000
-    }"}\n\n`;
+    const message =
+      `event: persistentServiceWorker\n` +
+      `retry: 15000\n` +
+      `id: ${id++}\n` +
+      `data: {"start":"${start}","now": "${now}", "minutes":"${
+        (now - start) / 60000
+      }"}\n\n`;
     const blob = new Blob([message], { type: 'text/event-stream' });
     event.respondWith(
       new Response(blob, {
