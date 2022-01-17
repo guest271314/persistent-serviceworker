@@ -1,5 +1,7 @@
 # Persistent ServiceWorker
 
+https://guest271314.github.io/persistent-serviceworker/
+
 References:
 
 - https://bugs.chromium.org/p/chromium/issues/detail?id=1152255
