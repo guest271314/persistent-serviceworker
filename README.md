@@ -1,6 +1,6 @@
 # Persistent ServiceWorker
 
-Persistent ServiceWorker for Chromium, Firefox, MV3 extensions.
+Persistent `ServiceWorker` workarounds for Chromium, Firefox, MV3 extensions.
 
 [GitHub pages](https://guest271314.github.io/persistent-serviceworker/) (`EventSource`)
 
