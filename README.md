@@ -1,8 +1,6 @@
-# Persistent ServiceWorker
+# Persistent `ServiceWorker`
 
-Persistent `ServiceWorker` workarounds for Chromium, Firefox, Manifest Version 3 (MV3) extensions.
-
-[GitHub pages](https://guest271314.github.io/persistent-serviceworker/) (`EventSource`)
+https://guest271314.github.io/persistent-serviceworker/ (`EventSource`, `FetchEvent`)
 
 References:
 
