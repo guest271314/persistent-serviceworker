@@ -16,7 +16,7 @@ navigator.serviceWorker.addEventListener('controllerchange', (e) => {
     // console.log(e);
   });
 });
-const sw = await navigator.serviceWorker.register('sw.js', {
+const sw = await navigator.serviceWorker.register('sw.js?=' + new Date().getTime(), {
   scope: './',
 });
 let es;
