@@ -1,0 +1,18 @@
+{
+  "name": "Persistent ServiceWorker - web_accessible_resources, iframe, MessageEvent",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [{
+      "resources": ["*.html", "*.js"],
+      "matches": ["<all_urls>"],
+      "extensions": [ ]
+  }],
+  "action": {},
+  "author": "guest271314"
+}
