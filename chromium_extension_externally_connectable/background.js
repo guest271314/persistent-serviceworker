@@ -66,14 +66,14 @@ async function handleConnectExternal(_) {
   port.onMessage.addListener(handleMessage);
   port.onDisconnect.addListener(handleDisconnect);
 
-  while (port && (new Date() - time) / 60000 < 1) {
+  while (port && (new Date() - time) / 1000 < 29.9) {
     if (port) {
       const now = new Date();
       port.postMessage({
         start,
         now,
         time,
-        active: (new Date() - time) / 60000 < 1,
+        active: (new Date() - time) / 1000 < 29.9,
         minutes: (now - start) / 60000,
       });
       await new Promise((resolve) => setTimeout(resolve, 100));
@@ -88,7 +88,7 @@ async function handleConnectExternal(_) {
       start,
       now,
       time,
-      active: (new Date() - time) / 60000 < 1,
+      active: (new Date() - time) / 1000 < 29.9,
       minutes: (now - start) / 60000,
     });
     port.disconnect();
